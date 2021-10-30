@@ -1,0 +1,78 @@
+ 
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body id="bodyTag">
+  <div class="container">
+  
+    <center>
+      <h2 class="title">
+        Emotion To Emoji Website
+        <br>
+        <!--hex code for emoji-->
+        <span>&#x1F600;</span>
+        <span>&#x1F61F;</span>
+        <span>&#x1F620;</span>
+        <!--decimal code for emoji-->
+        <span>&#128528;</span>
+      </h2>
+      <br><br>
+      <p style="font-size: 20px; color: #ffffff;">
+        Take your selfie to generate an emoji.
+      	<br>
+        <b style="color: #ffffff">Are you Happy?</b>
+        <br>
+        <b style="color: lightskyblue">Are you Sad?</b>
+        <br>
+        <b style="color: lightcoral">Are you Angry?</b>
+        <br>
+      </p>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <h4 style="color: #ffffff;">Webcam: </h4>
+        <div id="camera"></div>
+        <br>
+        <br>
+        <button class="takePicture" onclick="takePicture()">Take Picture</button>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <h4 class="prediction">Prediction 1</h4>
+        <br>
+        <label style="color: lightcoral; font-size: 52px; font-family: Calibri;" id="emotionName1"></label>
+        <br>
+        <label class="emoji" id="emoji1"></label>
+        <br>
+        <h4 class="prediction">Prediction 2</h4>
+        <br>
+        <label style="color: lightcoral; font-size: 52px; font-family: Calibri;" id="emotionName2"></label>
+        <br>
+        <label class="emoji" id="emoji2"></label>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <h4 style="color: #ffffff;">Snapshot: </h4>
+        <div id="result"></div>
+        <br>
+        <br>
+        <button class="takePicture" onclick="identifyEmotion()">Identify Emotion</button>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="script.js"></script>
+
+  </body>
+</html>
+
+ 

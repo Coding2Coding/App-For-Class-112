@@ -1,0 +1,47 @@
+#bodyTag {
+  background: linear-gradient(rgb(232, 214, 255) 0%, rgb(204, 232, 255) 100%);
+  font-family: Calibri;
+}
+span {
+  font-size: 30px;
+}
+#camera , #result {
+  border: 2px dashed #ffffff;
+  width: 350px;
+  height: 350px; 
+}
+
+.emoji {
+  font-size: 52px;
+}
+
+.title {
+  background: lightskyblue;
+  border-radius: 14px;
+  border-style: dashed;
+  border-color: #ffffff;
+  letter-spacing: 2px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: #ffffff;
+}
+#camera {
+  border-style: dashed;
+  border-color: #ffffff;
+}
+.takePicture {
+  border-color: #ffffff;
+  border-radius: 14px;
+  background: lightcoral;
+  color: #ffffff;
+  font-size: 20px;
+}
+.prediction {
+  background: #ffffff;
+  border-radius: 14px;
+  color: lightskyblue;
+  border-color: lightskyblue;
+  border-style: dashed;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
